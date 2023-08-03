@@ -146,11 +146,21 @@ h3 {
   font-size: 2rem;
   padding: 1rem;
   font-weight: bold;
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
 }
 
 .principal a:hover, .boton:hover {
   background-color: var(--primario);
   color: var(--oscuro);
+}
+
+.principal a:hover{
+  box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+  transform: scale3d(1.5, 1.5, 0.3);
+      -webkit-transform: scale3d(1.5, 1.5, 0.3);
+      -moz-transform: scale3d(1.5, 1.5, 0.3);
 }
 
 /* Hero */
@@ -289,5 +299,35 @@ h3 {
 .mensaje a {
   text-decoration: none;
   font-weight: bold;
-  align-items: center;
+  justify-content: center;
 }
+
+.mensaje svg{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mensaje a:hover{
+  background-color: var(--grisClaro);
+}
+
+
+              
+
+              
+
+              
+.float{
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+.float:hover{
+  box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  -moz-transform:translate(0px,5px);
+}
+            
+}
+            
