@@ -1,3 +1,14 @@
+/*Los selectores van con un . cuando es una clase (definida por el usuario),
+y si no tienen nada son un elemento (propio de html), al concatenar elementos y clases,
+elementos y elementos, clases y clases, etc lo que se hace es decir que se aplique el estilo a los hijos de un
+determinado tipo con padres de un determinado tipo (por ej h1 span{} se aplicaria a los span hijos de h1) 
+(ver pdf de selectores de css 04)
+*/
+
+/*Si un selector es mas especifico que otro pero se encuentra mas arriba en el codigo,
+el que le aporta los estilos es el mas especifico
+(ver pdf Especifidad css 05)*/
+
 :root {
   --blanco: #ffffff;
   --oscuro: #212121;
@@ -6,10 +17,10 @@
   --gris: #757575;
   --grisClaro: #dfe9f3;
 }
-/* Esto es un comentario (ctrl+/)**/
+
 /* Globales */
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* Esto combinado con lo aplicado al body font-size es para hacer que 1 rem = 10px */
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
 }
@@ -30,7 +41,7 @@ html {
 }
 
 body {
-  font-size: 16px; /* 1 rem = 10px */
+  font-size: 16px; /* Esto combinado con lo aplicado al html font-size es para hacer que 1 rem = 10px */
   font-family: "krub", sans-serif;
   background-image: linear-gradient(
     to top,
@@ -38,6 +49,7 @@ body {
     var(--blanco) 100%
   );
 }
+
 .titulo {
   text-align: center;
   font-size: 3.8rem;
@@ -97,7 +109,10 @@ h3 {
 }
 
 /* Titulos */
-.titulo span {
+.titulo span { 
+  /*span se usa como una etiqueta dentro de otra para separar alguna porcion de un elemento 
+  y darle propiedades distintas, en este caso el "Freelancer" dentro del texto del h1 para que su font-size
+  sea de distinto tamaño*/
   font-size: 2rem;
 }
 
