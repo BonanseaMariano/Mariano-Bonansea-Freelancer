@@ -347,6 +347,9 @@ h3 {
  .mensaje {
     flex-direction: column;
  }
+ .mensaje p{
+  text-align: center;
+ }
 }
 
 .mensaje p  {
